@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     const produtos = [
         { nome: 'Tenis Book 1', camiseta: 'dbookk.webp', descrição: 'Basquete', preço: 'R$:790,00' },
-        { nome: 'Geek Freak 6', camiseta: 'giannis.webp', descrição: 'Basquete', preço: 'R$:900,00' },
+        { nome: 'Geek Freak 5', camiseta: 'giannis.webp', descrição: 'Basquete', preço: 'R$:900,00' },
         { nome: 'Kevin Durant 17', camiseta: 'kd17.webp', descrição: 'Basquete', preço: 'R$:1200,00' },
         { nome: 'Kyrie Confetti', camiseta: 'kyrie.webp', descrição: 'Basquete', preço: 'R$:500,00' },
         { nome: 'Lebron 21', camiseta: 'lebron21.webp', descrição: 'Basquete', preço: 'R$:850,00' }
