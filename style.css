@@ -31,14 +31,16 @@ a {
   gap: 4px;
   align-items: center;
   padding: 4px 8px;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
 }
 
 .menu li:hover {
   background-color: var(--cor-hover);
   transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .menu img {
@@ -71,6 +73,19 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: white;
   position: relative;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .card:hover {
@@ -81,6 +96,12 @@ a {
 .cor-topo {
   height: 40px;
   background: linear-gradient(90deg, lightblue, deepskyblue);
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.2); }
 }
 
 .card img {
@@ -123,6 +144,13 @@ a {
   background-color: rgb(110, 37, 158);
   color: white;
   transform: scale(1.1);
+  animation: pulseSize 0.3s ease;
+}
+
+@keyframes pulseSize {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1.1); }
 }
 
 button.comprar {
@@ -135,24 +163,10 @@ button.comprar {
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
 }
 
 button.comprar:hover {
   background-color: rgb(85, 25, 130);
-}
-
-button.comprar:active {
-  transform: scale(0.95);
-}
-
-.card.added-to-cart {
-  animation: shake 0.4s ease-in-out;
-}
-
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
 }
