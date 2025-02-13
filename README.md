@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ![](./img/print.png)
 
 
