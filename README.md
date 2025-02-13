@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![](./img/print.png)
 
 
@@ -17,3 +18,6 @@ Este projeto tem como objetivo desenvolver uma interface interativa para uma loj
 
 ## Autor
 - [Kauan Rodrigues](https://github.com/kauanmlk9860)
+=======
+
+>>>>>>> 96acf614cda6ba0602234e010330dbdebe5d9493
