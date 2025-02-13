@@ -2,10 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const disciplinas = [
-        { nome: 'Insta', icon: 'insta.png', cor: 'yellow' },
-        { nome: 'Tik Tok', icon: 'tiktok.png', cor: 'tomato' },
-        { nome: 'Web', icon: 'web.png', cor: 'blue' },
-        { nome: 'Youtube', icon: 'youtube.png', cor: 'pink' }
+        { nome: 'INSTAGRAM', icon: 'insta.png', cor: 'yellow' },
+        { nome: 'TIK TOK', icon: 'tiktok.png', cor: 'tomato' },
+        { nome: 'WEB', icon: 'web.png', cor: 'blue' },
+        { nome: 'YOUTUBE', icon: 'youtube.png', cor: 'pink' }
     ];
     const produtos = [
         { nome: 'Tenis Book 1', camiseta: 'dbook.webp', descrição: 'Basquete', preço: 'R$:790,00' },
